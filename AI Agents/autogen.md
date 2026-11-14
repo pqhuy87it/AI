@@ -1,4 +1,5 @@
 https://github.com/microsoft/autogen
+https://github.com/microsoft/agent-framework
 
 **[microsoft/autogen](https://github.com/microsoft/autogen)** là một framework lập trình mã nguồn mở (hỗ trợ **Python** và **.NET/C#**) do **Microsoft Research** khởi xướng, dùng để xây dựng các ứng dụng **Multi-Agent AI điều phối thông qua hội thoại (conversation-driven)** và kiến trúc hướng sự kiện (event-driven) ([IBM](https://www.ibm.com/think/topics/autogen), [Atlan](https://atlan.com/know/ai-agent/what-is-autogen/)).
 

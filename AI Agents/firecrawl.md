@@ -5,7 +5,7 @@ https://github.com/firecrawl/firecrawl
 Thay vì chỉ tải mã nguồn HTML thô như các thư viện truyền thống (BeautifulSoup, Scrapy), Firecrawl đóng vai trò là **Context API (lớp cung cấp ngữ cảnh web)** giúp AI đọc hiểu thông tin trên internet một cách chính xác và tiết kiệm token nhất.
 
 ---
-[](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nNFLcF5OKMDB2JQY17mlpuADWtzz5ntmCWeV_8LH5bOIO-Cf9bfvtNRt&s=10)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nNFLcF5OKMDB2JQY17mlpuADWtzz5ntmCWeV_8LH5bOIO-Cf9bfvtNRt&s=10)
 ---
 
 Như minh họa trong sơ đồ kiến trúc trên, khi nhận một yêu cầu từ **User / SDK**, **API (Express)** sẽ đẩy tác vụ vào hàng đợi **Redis (BullMQ)** để các **Worker (Node.js)** xử lý bất đồng bộ. Worker sử dụng **Playwright / Fetch** để tải và render đầy đủ các trang web chạy JavaScript nặng, sau đó đẩy HTML thô qua **Rust/Go Module** (xử lý native tốc độ cao) để lọc bỏ thẻ thừa và chuyển thành Markdown sạch. Nếu người dùng yêu cầu trích xuất theo cấu trúc (Schema), dữ liệu sẽ tiếp tục đi qua **AI Provider (OpenAI/Gemini)** để trả về JSON chuẩn xác.

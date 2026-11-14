@@ -1,0 +1,29 @@
+https://github.com/msitarzewski/agency-agents
+
+**[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** (còn gọi là **The Agency**) là bộ sưu tập mã nguồn mở gồm **hơn 150 đến 200+ AI Agent Personas chuyên biệt** được tổ chức như một công ty dịch vụ kỹ thuật số (digital agency) đầy đủ phòng ban, giúp biến các công cụ lập trình AI đa dụng thành một đội ngũ chuyên gia thực thụ ([DeepWiki](https://deepwiki.com/msitarzewski/agency-agents), [Trendshift](https://trendshift.io/repositories/22315)).
+
+Nếu như `ponytail` ở trên chỉ đóng vai một "Senior Dev lười biếng" duy nhất để ép AI viết ít code lại, thì **[agency-agents](https://github.com/msitarzewski/agency-agents)** cung cấp cả một "công ty" gồm các nhân sự AI có cá tính, quy trình làm việc (workflow) và tiêu chuẩn đầu ra (deliverables) riêng biệt cho từng vị trí.
+
+### Bài toán mà dự án giải quyết
+
+* **Chuẩn hóa một nguồn duy nhất (Single Source of Truth):** Thay vì phải tự viết lại system prompt cho từng công cụ khác nhau, mỗi agent trong repo được định nghĩa một lần bằng file Markdown kèm YAML frontmatter ([DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)).
+* **Chuyển đổi và cài đặt tự động đa nền tảng:** Bộ script đi kèm (`scripts/convert.sh` và `scripts/install.sh`) hoặc ứng dụng desktop native [Agency Agents App](https://github.com/msitarzewski/agency-agents-app) (viết bằng Tauri 2 + Rust/Svelte) tự động biên dịch và cài đặt các agent này vào hơn 11 nền tảng AI như Claude Code, Cursor, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, Aider, Windsurf và Codex ([GitHub - msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents), [DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)).
+* **Cấu trúc chuyên sâu thay vì prompt chung chung:** Mỗi hồ sơ agent đều bao gồm 5 trụ cột bắt buộc: *Cá tính & Giọng điệu (Strong Personality)*, *Nhiệm vụ & Quy trình từng bước (Proven Workflows)*, *Sản phẩm đầu ra cụ thể kèm code mẫu (Clear Deliverables)*, *Chỉ số đo lường thành công (Success Metrics)* và *Cơ chế ghi nhớ/học hỏi (Learning Memory)* ([DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)).
+
+### Các phòng ban (Divisions) chính trong Repository
+
+Repo phân chia các agent vào hơn 13 phòng ban chuyên môn để bạn có thể cài toàn bộ hoặc chỉ chọn lọc những "nhân sự" phù hợp với dự án ([GitHub - msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents), [DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)):
+
+| Phòng ban (Division) | Các vai trò Agent tiêu biểu | Khi nào nên kích hoạt |
+| --- | --- | --- |
+| **Engineering** (`engineering/`) | `Mobile App Builder` (iOS/Android, Flutter), `Embedded Firmware Engineer` (ESP32/STM32, RTOS), `Backend Architect`, `Frontend Developer`, `SRE`, `Security Engineer`, `Code Reviewer`, `Minimal Change Engineer` | Thiết kế kiến trúc hệ thống, lập trình ứng dụng di động/nhúng, tối ưu database, review PR hoặc dựng CI/CD ([GitHub](https://github.com/msitarzewski/agency-agents)). |
+| **Design** (`design/`) | `UI Designer`, `UX Architect`, `UX Researcher`, `Brand Guardian`, `Whimsy Injector`, `UI Finish-Gate Reviewer` | Xây dựng design system, kiểm tra trải nghiệm người dùng, thêm micro-interactions hoặc rà soát giao diện trước khi release ([GitHub](https://github.com/msitarzewski/agency-agents)). |
+| **Product & PM** (`product/`, `project-management/`) | `Product Manager`, `Trend Researcher`, `Feedback Synthesizer` | Phân tích yêu cầu sản phẩm, tổng hợp phản hồi người dùng và lập kế hoạch phát triển tính năng ([DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)). |
+| **Testing & Security** (`testing/`, `security/`) | Các chuyên gia kiểm thử tự động, threat modeling, đánh giá lỗ hổng bảo mật và kiểm tra hiệu năng | Rà soát bảo mật ứng dụng web/API/mobile, viết test cases và kiểm tra độ ổn định trước khi lên production ([ExplainX](https://explainx.ai/skills/msitarzewski/agency-agents)). |
+| **Game & Spatial** (`game-development/`, `spatial-computing/`) | `Game Designer`, `Unity Architect`, `Unreal Systems Engineer`, `Godot Gameplay Scripter` | Thiết kế cơ chế gameplay, tối ưu đồ họa/shader và lập trình hệ thống trong game hoặc ứng dụng 3D/XR ([DeepWiki](https://deepwiki.com/msitarzewski/agency-agents)). |
+| **Marketing, Sales & Paid Media** (`marketing/`, `sales/`, `paid-media/`) | `Growth Hacker`, `App Store Optimizer (ASO)`, `Technical Writer`, `SEO Specialist`, `Sales Engineer`, `PPC Campaign Strategist` | Tối ưu ASO cho ứng dụng trên App Store/Google Play, viết tài liệu kỹ thuật, lập chiến dịch quảng cáo và phát triển cộng đồng ([GitHub](https://github.com/msitarzewski/agency-agents)). |
+| **Specialized & Strategy** (`specialized/`, `strategy/`) | `MCP Builder`, `Workflow Architect`, `Identity Graph Operator`, cùng các `runbooks.json` (như gói đội hình `startup-mvp`) | Xây dựng MCP server, thiết kế luồng điều phối đa agent (multi-agent orchestration) hoặc triệu tập một nhóm agent phối hợp chạy dự án ([GitHub](https://github.com/msitarzewski/agency-agents), [ExplainX](https://explainx.ai/skills/msitarzewski/agency-agents)). |
+
+### Cách thức sử dụng thực tế
+
+Bạn có thể cài đặt nhanh thông qua Homebrew trên macOS (`brew install --cask msitarzewski/agency-agents/agency-agents`) để mở giao diện chọn cài từng agent, hoặc dùng script dòng lệnh để nạp riêng từng phòng ban (ví dụ chỉ nạp mảng `engineering` và `security` vào công cụ đang dùng: `./scripts/install.sh --tool claude-code --division engineering,security`) ([GitHub - msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)). Sau khi cài, bạn chỉ cần gọi tên vai trò trong phiên chat (ví dụ kích hoạt `Mobile App Builder`, `Embedded Firmware Engineer` hoặc `Software Architect`) để AI làm việc theo đúng quy chuẩn của vị trí đó ([GitHub - msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)).
